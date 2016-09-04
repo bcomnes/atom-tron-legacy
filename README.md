@@ -12,6 +12,6 @@ Riari did a great job of representing the spirit of Tron Legacy, but didn't trac
 
 ### Install
 
-```
-$ apm install [...]
+```sh
+apm install [...]
 ```
