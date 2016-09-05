@@ -1,14 +1,43 @@
 
 // Config -----------------------------------
-@syntax-hue:          220;
-@syntax-saturation:   13%;
-@syntax-brightness:   18%;
+@syntax-hue:          216;
+@syntax-saturation:   25%;
+@syntax-brightness:   12%;
 
 
 // Monochrome -----------------------------------
-@mono-1: hsl(@syntax-hue, 14%, 71%); // default text
-@mono-2: hsl(@syntax-hue,  9%, 55%);
-@mono-3: hsl(@syntax-hue, 10%, 40%);
+@mono-1: hsl(216, 44%, 78%); // default text
+@mono-2: hsl(213,21%,55%);
+@mono-3: hsl(216, 10%, 40%);
+
+// Tron Legacy Colors ---------------------------
+@tl-fg: hsl(199,30%,85%);
+@tl-bg: hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@tl-variable: @tl-fg;
+@tl-comment: hsl(212,27%,26%); // ~@mono-3;
+@tl-string: hsl(12,100%,52%);
+@tl-numeric: hsl(72,87%,54%);
+@tl-function: hsl(40,100%,52%);
+@tl-constant: @tl-function;
+@tl-keyword: @mono-2;
+@tl-storage: hsl(202,65%,42%); // functions and vars
+@tl-type: @tl-storage;
+@tl-class: hsl(35,93%,54%);
+@tl-parameter: hsl(90,51%,58%);
+@tl-invalid-fg: hsl(60,40%,96%);
+@tl-invalid-bg: hsl(189, 100%, 38%);
+@tl-depreciated: hsl(74,100%,37%);
+@tl-json-dict: hsl(60,12%,78%);
+@tl-diff-header: hsl(49,10%,41%);
+@tl-delted:  hsl(189,100%,38%);
+@tl-inserted: hsl(80,75%,53%);
+@tl-changed: hsl(54,69%,67%);
+@tl-find: rgba(143, 190, 0, 0.63);
+@tl-filename: hsl(54,69%,67%);
+@tl-diff-added-fg: #A6E22E;
+@tl-diff-added-bg: #144212;
+@tl-diff-removed-fg: #F92672;
+@tl-diff-removed-bg: #660000;
 
 // Colors -----------------------------------
 @hue-1:   hsl(187, 47%, 55%); // <-cyan
@@ -24,8 +53,8 @@
 
 
 // Base colors -----------------------------------
-@syntax-fg:     @mono-1;
-@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-fg:     @tl-fg;
+@syntax-bg:     @tl-bg;
 @syntax-gutter: darken(@syntax-fg, 26%);
 @syntax-guide:  fade(@syntax-fg, 15%);
 @syntax-accent: hsl(@syntax-hue, 100%, 66% );
