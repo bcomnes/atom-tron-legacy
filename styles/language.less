@@ -98,7 +98,7 @@
   }
 
   &.object {
-    color: @tl-function;
+    color: @tl-fg;
   }
 
   &.property {
@@ -161,7 +161,7 @@
 
   &.section {
     &.embedded {
-      color: @mono-1;
+      color: @mono-2;
     }
 
     &.method,
@@ -187,6 +187,10 @@
     &.any-method {
       color: @tl-type;
     }
+  }
+
+  &.constant {
+    color: @tl-storage;
   }
 }
 
@@ -228,7 +232,7 @@
 
   &.method-call,
   &.method {
-    color: @tl-function;
+    color: @tl-fg;
   }
 
   &.definition {
@@ -256,6 +260,10 @@
 
   &.tag {
     color: @mono-1;
+  }
+
+  &.brace {
+    color: @mono-2
   }
 }
 
