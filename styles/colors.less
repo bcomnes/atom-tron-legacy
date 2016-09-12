@@ -1,0 +1,53 @@
+
+// Config -----------------------------------
+@syntax-hue:          216;
+@syntax-saturation:   25%;
+@syntax-brightness:   12%;
+
+// Monochrome -----------------------------------
+@mono-1: hsl(199,30%,85%); // default text
+@mono-2: hsl(216, 10%, 40%);
+@mono-3: hsl(212,27%,26%);
+
+// Colors -----------------------------------
+@light-blue: hsl(216, 44%, 78%);
+@blue: hsl(202,65%,42%);
+@gray: hsl(213,21%,55%);
+@red: hsl(12,100%,52%);
+@green: hsl(90,51%,58%);
+@neon-green: hsl(72,87%,54%);
+@green-alt-1: hsl(74,100%,37%);
+@green-alt-2: hsl(80, 75%, 53%);
+@green-alt-3: rgba(143, 190, 0, 0.63);
+@orange: hsl(40,100%,52%);
+@dark-orange: hsl(35,93%,54%);
+@cyan: hsl(189, 100%, 38%);
+
+@beige-1: hsl(60,40%,96%);
+@beige-2: hsl(60,12%,78%);
+@beige-3: hsl(49,10%,41%);
+@beige-4: hsl(54,69%,67%);
+
+@diff-added-bg: #144212;
+@diff-added-fg: #A6E22E;
+@diff-removed-bg: #660000;
+@diff-removed-fg: #F92672;
+
+// One Dark Mapping ---------------------------
+@hue-1:   @orange; // <-cyan
+@hue-2:   @orange; // <-blue
+@hue-3:   @blue; // <-purple
+@hue-4:   @red; // <-green
+
+@hue-5:   @mono-1; // <-red 1
+@hue-5-2: @gray; // <-red 2
+
+@hue-6:   @mono-1; // <-orange 1
+@hue-6-2: @green; // <-orange 2
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );

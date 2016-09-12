@@ -1,0 +1,357 @@
+// Language syntax highlighting https://google.com
+
+.comment {
+  color: @mono-3;
+  font-style: italic;
+
+  .markup.link {
+    color: @mono-3;
+  }
+
+  &.quote {
+    color: @cyan;
+  }
+}
+
+.entity {
+
+  &.name.type {
+    color: @blue;
+  }
+
+  &.other {
+    color: @blue;
+
+    &.inherited-class {
+      color: @blue;
+    }
+
+    &.attribute-name {
+      color: @blue;
+
+      &.id {
+        color: @orange;
+      }
+    }
+  }
+
+  &.name.function {
+    color: @orange;
+  }
+
+  &.name.class,
+  &.name.type.class {
+    color: @green;
+  }
+
+  &.name.section {
+    color: @orange;
+  }
+
+  &.name.tag {
+    color: @green-alt-2;
+  }
+}
+
+.keyword {
+  color: @blue;
+
+  &.control {
+    color: @gray;
+  }
+
+  &.operator {
+    color: @gray;
+  }
+
+  &.other.special-method {
+    color: @orange;
+  }
+
+  &.other.unit {
+    color: @gray;
+  }
+}
+
+.storage {
+  color: @blue;
+
+  &.type {
+    &.annotation,
+    &.primitive {
+      color: @green;
+    }
+  }
+
+  &.modifier {
+    &.package,
+    &.import {
+      color: @green;
+    }
+  }
+}
+
+.constant {
+  color: @light-blue;
+
+  &.variable {
+    color: @mono-1;
+  }
+
+  &.character.escape {
+    color: @orange;
+  }
+
+  &.numeric {
+    color: @neon-green;
+  }
+
+  &.language {
+    color: @dark-orange
+  }
+
+  &.other.color {
+    color: @gray;
+  }
+
+  &.other.symbol {
+    color: @gray;
+  }
+}
+
+.variable {
+  color: @mono-1;
+
+  &.language {
+    color: @blue;
+  }
+
+  &.interpolation {
+    color: @gray;
+  }
+
+  &.parameter {
+    color: @green;
+  }
+
+  &.ordered.list {
+    color: @neon-green;
+  }
+
+  &.unordered.list {
+    color: @green;
+  }
+}
+
+.string {
+  color: @red;
+
+
+  &.regexp {
+    color: @orange;
+
+    .source.ruby.embedded {
+      color: @green;
+    }
+  }
+
+  &.other.link {
+    color: @mono-2;
+  }
+}
+
+.punctuation {
+  &.definition {
+    &.comment {
+      color: @mono-3;
+    }
+
+    &.method-parameters,
+    &.function-parameters,
+    &.parameters,
+    &.separator,
+    &.seperator,
+    &.array {
+      color: @mono-1;
+    }
+
+    &.string {
+      color: @gray;
+    }
+
+    &.heading,
+    &.identity {
+      color: @orange;
+    }
+
+    &.bold {
+      color: @green;
+      font-weight: bold;
+    }
+
+    &.italic {
+      color: @blue;
+      font-style: italic;
+    }
+  }
+
+  &.section {
+    &.embedded {
+      color: @gray;
+    }
+
+    &.method,
+    &.class,
+    &.inner-class {
+      color: @mono-1;
+    }
+  }
+}
+
+.support {
+
+  &.quote {
+    color: @mono-2;
+  }
+
+  &.class {
+    color: @green-alt-2;
+  }
+
+  &.type {
+    color: @orange;
+  }
+
+  &.variable {
+    color: lighten(@blue, 10%);
+  }
+
+  &.function  {
+    color: @orange;
+
+    &.any-method {
+      color: @orange;
+    }
+  }
+}
+
+.meta {
+  &.class {
+    color: @dark-orange;
+
+    &.body {
+      color: @mono-1;
+    }
+  }
+
+  &.method-call,
+  &.method {
+    color: @mono-1;
+  }
+
+  &.definition {
+    &.variable {
+      color: @mono-1;
+    }
+  }
+
+  &.link {
+    color: @mono-1;
+  }
+
+  &.require {
+    color: @orange;
+  }
+
+  &.selector {
+    color: @blue;
+  }
+
+  &.separator {
+    background-color: #373b41;
+    color: @mono-1;
+  }
+
+  &.tag {
+    color: @mono-1;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.none {
+  color: @mono-1;
+}
+
+.invalid {
+  &.deprecated {
+    color: @syntax-deprecated-fg !important;
+    background-color: @syntax-deprecated-bg !important;
+  }
+  &.illegal {
+    color: @syntax-illegal-fg !important;
+    background-color: @syntax-illegal-bg !important;
+  }
+}
+
+// Languages -------------------------------------------------
+
+.markup {
+  &.bold {
+    color: @red;
+    font-weight: bold;
+  }
+
+  &.changed {
+    color: @blue;
+  }
+
+  &.deleted {
+    color: @mono-1;
+  }
+
+  &.italic {
+    color: @green-alt-2;
+    font-style: italic;
+  }
+
+  &.strike {
+    color: @mono-2;
+    text-decoration: line-through;
+  }
+
+  &.heading {
+    color: @mono-1;
+
+    .punctuation.definition.heading {
+      color: @orange;
+    }
+
+    &.marker {
+      color: @orange
+    }
+  }
+
+  &.link {
+    color: @blue;
+  }
+
+  &.inserted {
+    color: @red;
+  }
+
+  &.quote {
+    color: @mono-1;
+  }
+
+  &.raw {
+    color: @gray;
+  }
+
+}
+
+.border {
+  color: @gray;
+}

@@ -1,0 +1,25 @@
+.source.css {
+
+  // highlight properties/values if they are supported
+  .property-name,
+  .property-value {
+    color: @mono-2;
+    &.support {
+      color: @green-alt-1;
+    }
+  }
+
+  .punctuation {
+    &.definition.entity,
+    &.separator,
+    &.terminator {
+      color: @mono-2;
+    }
+  }
+
+  .color,
+  .rgb-value {
+    color: @orange;
+  }
+
+}

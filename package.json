@@ -1,0 +1,19 @@
+{
+  "name": "one-tron-legacy-syntax",
+  "theme": "syntax",
+  "version": "2.2.2",
+  "description": "The Tron Legacy syntax theme based off One Dark",
+  "keywords": [
+    "dark",
+    "blue",
+    "syntax",
+    "tron",
+    "legacy",
+    "one"
+  ],
+  "repository": "https://github.com/bcomnes/atom-tron-legacy",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}
