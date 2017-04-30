@@ -1,5 +1,7 @@
 ## Tron Legacy Syntax theme
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/bcomnes/atom-tron-legacy.svg)](https://greenkeeper.io/)
+
 ![screen2](http://bcomnes.github.io/atom-tron-legacy/screen2.png)
 
 > The UI theme is One Dark, which ships with atom and matches the color scheme.
